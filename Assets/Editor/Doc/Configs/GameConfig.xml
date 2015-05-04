@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  developerMode="false"情况下，一下node 和 attribute 将会被移除
+  
+  1.所有xml的注释，打包后将被移除。
+  2.所有Node的attribute 为 comment 的属性 将被移除
+  3.所有test节点的node打包后将被移除
+  assetsPath                  ="E:/U3D_WorkSpace/prjs_5.0_MyGame/ThreeKingDoms/Assets"
+
+
+  tab_managersName tag_ActivityWindowsManager is Tagid , ActivityWindowsManager GameObj Name
+-->
+<GameConfigs comment="游戏配置文件Main级别文件，这个属性打包后将被移除！">
+  <GameInfo
+    
+    developerMode               ="true123"
+    traceLogMode				        ="true"
+    supportLanguages            ="ZH_CN,EN_US,ZH_HANT"
+    
+    serverNum ="1"
+    serverIp="127.0.0.1"
+    serverProt ="8885"
+    serverPlatfrom="360"
+
+
+
+	mainSceneName = "MainScene" 
+
+    tags      = "
+    	tag_testPlayers,
+        tag_mainManagermentCenter,
+        tag_mainCanvas,
+        tag_eventSystem
+    "
+    
+    packageArrRef="/Resources/Configs/GameConfig.bytes:
+      /Editor/Doc/Configs/GameConfig.xml,
+      /Editor/Doc/Configs/ClientAndServerCommunicationProtocol.xml,
+      /Editor/Doc/I18N/ZH_CN.xml"
+
+    playerMovementFloor 		= "[const]PlayerMovementFloor"
+    goName_levelExtent 			= "goName_levelExtent[const]"
+
+
+
+    ag_uiWindowPrefabMapping		    ="
+        EmptyContainer|Prefabs/UI/Container/EmptyContainer,
+    	ChatRoomActivityWindowComponent|Prefabs/UI/windows/chatroom/ChatRoomActivityWindowComponent,
+		TaskViewActivityWindowComponent|Prefabs/UI/windows/chatroom/TaskViewActivityWindowComponent,
+		RolePackActivityWindowComponent|Prefabs/UI/windows/chatroom/RolePackActivityWindowComponent,
+		txt_palyerName|Prefabs/UI/TextFields/txt_palyerName,
+    "
+    maxActivedWindwosCount = "10"
+    
+   
+
+
+
+    gameLayer_unit_movement	= "gameLayer_unit_movement" 
+    gameLayer_unit_attack	= "gameLayer_unit_attack"
+	gameLayer_camera	    = "gameLayer_camera"
+	gameLayer_clickInput    = "gameLayer_clickInput"
+
+
+                                       
+	comment_gametags_filePath = "{assetsPath}/Scripts/MoojiBehaviour/Constants/GameTagsConstant.cs"
+
+    unitySceneArr 		= "Assets/Scene/Main.unity,Assets/Scene/PreLoaderScene.unity" 
+    publishedFileName 	= "HelloWorld" 
+    
+	
+    
+    
+    comment_gameConfigXmlFilePath         ="{assetsPath}/Editor/Doc/Configs/GameConfig.xml"
+    comment_gameConfigBytesFilePath		   ="{assetsPath}/Resources/Configs/GameConfig.bytes"
+    comment_gameConfigCSharpFilePath      ="{assetsPath}/Scripts/Autogeneration/DataSets/Configs/GameConfigVo.cs"
+
+    comment_dataBasePath                  ="{assetsPath}/Editor/Doc/DataBase/DataBase.xlsx"
+    comment_dateBaseOutPutPath_developer  ="{assetsPath}/Editor/Doc/DataBase/DataBase.bytes"
+    comment_allCSharpFilesComplete		  ="{assetsPath}/Editor/Doc/DataBase/allCSharpFilesComplete.txt"
+
+   
+    comment_dataBaseCSharpFileRoot        ="{assetsPath}/Scripts/com/game/db/"
+    comment_dataBaseTableMappingPath      ="{assetsPath}/Scripts/com/game/db/DataBaseTableMappingService.cs"
+    comment_dateBaseOutPutPath            ="{assetsPath}/Resources/DateBase/DataBase.bytes"
+
+    comment_javaPluginPath                ="{assetsPath}/Editor/plugin/JavaTools.jar"
+   
+    comment_publishedRoot                 ="f:/==== u3d published ===/ThreeKingDoms"
+    comment_textEditorEXE                 ="C:\Program Files (x86)\Sublime Text 3\sublime_text.exe"
+    comment_showJavaPluginOutputMsg       ="true123"
+
+    comment_gameServicePath 			  ="{assetsPath}/Scripts/com/game/services/GameService.cs"
+    comment_services 					  ="MemoryPatcherService,IssueMessageService,NetService,XmlService,EncryptionService,DataBaseService,DataBaseTableMappingService,TweenService,PrefabService"
+    
+    comment_prefabConstant      = "{assetsPath}/Scripts/com/game/constant/PrefabConstant.cs"
+	
+	
+
+
+
+	
+	
+    />
+</GameConfigs>
+
+
+
+
+
+  

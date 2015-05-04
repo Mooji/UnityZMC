@@ -54,23 +54,23 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween43">
-      <HintPath>Assets\--UnityPlugins--\DOTween\DOTween43.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween50">
-      <HintPath>Assets\--UnityPlugins--\DOTween\DOTween50.dll</HintPath>
+    <Reference Include="ProBuilderCore-Unity5">
+      <HintPath>Assets\--Mooji Test --\ZZR\ProCore\ProBuilder\Classes\ProBuilderCore-Unity5.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\--UnityPlugins--\DOTween\DOTween.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween43">
+      <HintPath>Assets\--UnityPlugins--\DOTween\DOTween43.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween46">
       <HintPath>Assets\--UnityPlugins--\DOTween\DOTween46.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets\--UnityPlugins--\DOTween\DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="DestMath">
       <HintPath>Assets\--UnityPlugins--\MathLibraryForUnity\Lib\DestMath.dll</HintPath>
@@ -261,6 +261,80 @@
     <Compile Include="Assets\--UnityPlugins--\MathLibraryForUnity\Tests\Scripts\Query\2D\Test_Triangle2Sides.cs" />
     <Compile Include="Assets\--UnityPlugins--\MathLibraryForUnity\Tests\Scripts\Query\3D\Test_Plane3Sides.cs" />
     <Compile Include="Assets\--UnityPlugins--\MathLibraryForUnity\Tests\Scripts\Test_Base.cs" />
+    <Compile Include="Assets\Scripts\Autogeneration\DataSets\Configs\GameConfigVo.cs" />
+    <Compile Include="Assets\Scripts\Autogeneration\DataSets\Configs\GameConfigsTemplete.cs" />
+    <Compile Include="Assets\Scripts\Demo\PanelManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\Net\ByteArray.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\BlackBoard\PlayerInfoBlackBoard.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\CamearFollower.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\Constants\GameTagsConstant.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\Constants\ObserverMsgTypeEnum.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\Constants\PlayerConstant.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\Constants\PrefabAssetsConstant.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\Constants\UIConstant.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\FSMEventsBlackBoard.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\GameBootstrapper.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\AI\AIAnimatorLookAt.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\AI\AIMovement.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\AI\AIPlayerMoveByAgent.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\AI\AIPlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\AI\AIPlayerMovementByAngularAndSpeed.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\AI\AIPlayerMovementByCalculatePath.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\AI\AIPlayerMovementByTweener.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\AI\Battle\AIBattleUnit.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\AI\IPlayerMove.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\ClickedGroundMaskBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\PlayerMovementBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\Prefabs\PrefabsBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\PlayerInfo\vos\PlayerMovementDescribeVo.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\ReloadMainSceneBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MoojiBehaviour\UtilityDataCenter.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Actions\ActionDoNext.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Actions\ActionPlayerJustMove.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Actions\DefaultSetttings\DefaultSettingsAction.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Actions\Managers\PlayerTouchManagerAction.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Actions\MoojiBehaviourMachineAction.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Actions\PlayerAttackUnitsAction.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Actions\PlayerChangedCurrLeadAction.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Actions\PlayerCloseToCanAttackUnitsAction.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Actions\PlayerSelectCanAttackUnitsAction.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\BMC.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\BlackBoards\ISceneBlackBoard.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\BlackBoards\SceneBlackBoard.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\EnumConstant\BehaviourManagerType.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Events\ConvertFsmEventToObserverBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\ActivityWindowns\ActivityUIBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\ActivityWindowns\DragPanelInScrollView.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\ActivityWindowns\RectTransfromResetComponent.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\GameConfig\EncryptionManager\EncryptionManager.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\GameConfig\EncryptionManager\QuickLZ.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\GameConfig\GameConfigBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\GameConfig\i18n\I18NConfigVo.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\GameConfig\i18n\vos\I18NItemVo.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\GameConfig\i18n\vos\RefsVo.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\GameServer\GameServerBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\Input\MouseInputBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\Interfaces\IMoojiBehaviourManager.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\Observer\IPublisher.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\Observer\ISubscriber.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\Observer\ObserverBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\Managers\Observer\PublisheOptionVo.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BahaviourMachine\MoojiConCurrentMonoState.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BattleUnits\AI\AI.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BattleUnits\AI\IAI.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BattleUnits\AI\MoveAndRotation\AIMoveAndRotation.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BattleUnits\AI\MoveAndRotation\AIPlayerMoveAndRotation.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BattleUnits\AI\MoveAndRotation\IAnimatorHashID.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BattleUnits\AI\MoveAndRotation\SimpleAnimatorHashID.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\BattleUnits\Player\PlayerUnitManager.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\CameraSwitchManager.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\vos\CameraPointVo.cs" />
+    <Compile Include="Assets\Scripts\Test\CamRig.cs" />
+    <Compile Include="Assets\Scripts\Test\CameraRigByMixCamRigs.cs" />
+    <Compile Include="Assets\Scripts\Test\DebugInfluence.cs" />
+    <Compile Include="Assets\Scripts\Test\InfluenceBox.cs" />
+    <Compile Include="Assets\Scripts\Test\InfluenceSphere.cs" />
+    <Compile Include="Assets\Scripts\Test\InfluenceZone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\--UnityPlugins--\BundleManager\BMConfiger.txt" />
@@ -278,7 +352,16 @@
     <None Include="Assets\--UnityPlugins--\DOTween\readme.txt" />
     <None Include="Assets\--UnityPlugins--\MathLibraryForUnity\Doc\VersionLog.txt" />
     <None Include="Assets\--UnityPlugins--\MathLibraryForUnity\Lib\DestMath.XML" />
+    <None Include="Assets\Editor\Doc\Configs\ClientAndServerCommunicationProtocol.xml" />
+    <None Include="Assets\Editor\Doc\Configs\GameConfig.xml" />
+    <None Include="Assets\Editor\Doc\DataBase\allCSharpFilesComplete.txt" />
+    <None Include="Assets\Editor\Doc\I18N\EN_US.xml" />
+    <None Include="Assets\Editor\Doc\I18N\ZH_CN.xml" />
+    <None Include="Assets\Editor\Doc\I18N\ZH_HANT.xml" />
+    <None Include="Assets\Editor\Doc\Template\PrefabsTemplate.txt" />
     <None Include="Assets\Plugins\BehaviourMachine\Readme!!!.txt" />
+    <None Include="Assets\Resources\Prefabs\UI\Container\ui_empty_container.txt" />
+    <None Include="Assets\Resources\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>

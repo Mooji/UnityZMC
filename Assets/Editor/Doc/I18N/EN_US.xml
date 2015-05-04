@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n desc="{xx}代表ui中用到 其他代表程序中用到的">
+  <refs>
+    <ref id="1001" val ="GetTheBlues"    desc="游戏名字" />
+    <ref id="1002" val ="XXX"       desc="角色名字登陆服务器后得到"  />
+    <ref id="1003" val ="[System]" />
+  </refs>
+
+  <items>
+    <item key="{cr.tab.0}" val="World" />
+    <item key="{cr.tab.1}" val="Guild" />
+    <item key="{cr.tab.2}" val="Privateer" />
+    <item key="{cr.inputTxt.backGroundInfo}"  val="Please enter chat content..." />
+
+    <item key="cr.msg.channelInfo.0"  val="World channel: Lv. 15 later can chat oh, kiss!"/>
+    <item key="cr.msg.channelInfo.1"  val=""/>
+    <item key="cr.msg.channelInfo.2"  val=""/>
+    <item key="cr.msg.wcecome" refs="1003,1002,1001">
+      <![CDATA[!Please arrange the game time]]>
+    </item>
+    <item key="cr.msg.Invalid_string_in_input" refs="1003">
+      <![CDATA[<color=#ff0000>{1}</color>：The illegal input string]]>
+    </item>
+
+  </items>
+
+</i18n>

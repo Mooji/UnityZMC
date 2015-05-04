@@ -1,6 +1,7 @@
 /Library
 /Temp
 *.meta
+
 Thumbs.db
 *.obj
 *.exe

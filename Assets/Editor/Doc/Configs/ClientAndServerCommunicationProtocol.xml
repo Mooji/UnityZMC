@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  parmas type 
+  int32       1
+  int64       2
+  string      3
+  float       4
+  double      5
+  array       6
+  list        7
+  boolean     8   要加新的类型数字往后
+  
+  所有的注释，test 节点中内容，任意节点 comment 属性 不会被压缩到最终bin文件中
+  
+  -->
+<Messages  comment="s1_test">
+  <msg order="1">
+
+    <params type="6" arrayType="1"  />
+    <!-- int[] a = new int[?]-->
+    <params type="6" arrayType="3"/>
+    <!-- string[] a = new string[?]-->
+
+    <params type="3" />
+    <params type="1" />
+
+    <params type="7">
+      <value type="1" />
+      <!-- params1 userId-->
+      <value type="3" />
+      <!-- params2 userName-->
+      <value type="3" />
+      <!-- params3 userPwd-->
+    </params>
+
+  </msg>
+
+
+  <msg order="2" comment="登陆游戏">
+    <params type="3" comment="token" />
+    <params type="2" comment="roleID"/>
+    <params type="3" comment="roleName"/>
+  </msg>
+
+
+  <test comment="这个节点不会被压缩到bin文件中">
+
+    <target orderId="2" comment="当服务器接口未完成情况下，测试用例">
+
+      <clientRequest comment="模拟客户端请求服务器参数列表">
+        <parmas value="ASDAD-ASKLJLKAJ-XCASDASD-123ZASAD" />
+        <parmas value="48i57395467459876498576" />
+        <parmas value="Hell你好" />
+      </clientRequest>
+
+      <serverResponseOrPush comment="模拟服务器响应或推送消息到客户端">
+        <params type="7">
+          <value type="1" />
+          <value type="3" />
+          <value type="3" />
+        </params>
+      </serverResponseOrPush>
+
+    </target>
+
+  </test>
+
+
+</Messages>
+
+

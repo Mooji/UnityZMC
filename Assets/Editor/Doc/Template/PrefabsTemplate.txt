@@ -1,0 +1,29 @@
+using System.Collections.Generic;
+
+namespace Mooji
+{
+
+    public class PrefbasAssets
+    {
+
+        public enum PrefabAssetsConstant
+        {
+#enums#
+        }
+
+
+        private Dictionary<PrefabAssetsConstant,string> _prefabMapping;
+        public PrefbasAssets()
+        {
+            _prefabMapping = new Dictionary<PrefabAssetsConstant , string>();
+#enumMaps#
+        }
+
+        public Dictionary<PrefabAssetsConstant,string> getPrefabMapping()
+        {
+            return this._prefabMapping;
+        }
+    }
+
+}
+

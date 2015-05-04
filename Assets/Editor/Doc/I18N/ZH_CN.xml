@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n desc="{xx}代表ui中用到 其他代表程序中用到的">
+  <refs>
+    <ref id="1001" val ="走麦城"    desc="游戏名字" />
+    <ref id="1002" val ="XXX"       desc="角色名字登陆服务器后得到"  />
+    <ref id="1003" val ="[系统]" />
+  </refs>
+
+  <items>
+    <item key="{cr.tab.0}" val="世界" />
+    <item key="{cr.tab.1}" val="公会" />
+    <item key="{cr.tab.2}" val="私聊" />
+    <item key="{cr.inputTxt.backGroundInfo}"  val="请输入聊天内容.." />
+
+    <item key="cr.msg.channelInfo.0"  val="世界频道：Lv.15级以后才可以聊天哦，亲！"/>
+    <item key="cr.msg.channelInfo.1"  val=""/>
+    <item key="cr.msg.channelInfo.2"  val=""/>
+    <item key="cr.msg.wcecome" refs="1003,1002,1001">
+      <![CDATA[<color=#ff0000>{1}</color>：欢迎<color=#00ff00>{2}</color>来到<color=#00ff00>{3}</color>!请合理安排游戏时间]]>
+    </item>
+    <item key="cr.msg.Invalid_string_in_input" refs="1003">
+      <![CDATA[<color=#ff0000>{1}</color>：输入了非法的字符串]]>
+    </item>
+
+  </items>
+
+</i18n>
