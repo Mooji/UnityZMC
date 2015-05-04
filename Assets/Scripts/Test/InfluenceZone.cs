@@ -49,6 +49,8 @@ public static class InfluenceEntensions
 
     public static List<InfluenceZone> CheckInfluencers(Vector3 position, LayerMask mask)
     {
+        
+        
         Collider[] colliders = Physics.OverlapSphere(position, 1f, mask);
         List<InfluenceZone> Influencers = new List<InfluenceZone>();
         foreach (Collider c in colliders)
