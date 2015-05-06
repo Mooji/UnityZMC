@@ -4,7 +4,7 @@ using UnityEditor;
 using Mooji;
 
 
-[CustomEditor( typeof( CameraPointVo ) )]
+//[CustomEditor( typeof( CameraPointVo ) )]
 public class EditorCameraPointVo : Editor
 {
     public override void OnInspectorGUI()
@@ -15,7 +15,7 @@ public class EditorCameraPointVo : Editor
         DrawDefaultInspector();
 
 
-        CameraPointVo cpVo = (CameraPointVo) target;
+       // CameraPointVo cpVo = (CameraPointVo) target;
 
 
         GUILayout.BeginHorizontal();

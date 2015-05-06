@@ -24,7 +24,6 @@ namespace Mooji
 
         private GameObject _currSelectedLeadGo;
 
-        private CameraPointVo _mainCameraPointVo;
 
         private GameObject _clickedFloorAnimGo;
         private GameObject _currSelectLeadAnimGo;
@@ -62,18 +61,6 @@ namespace Mooji
             }
 
             return _selectBattleUnitLocaltionMaskGo;
-        }
-
-
-
-        public void setMainCameraPointVo( CameraPointVo mainCameraPointVo )
-        {
-            this._mainCameraPointVo = mainCameraPointVo;
-        }
-
-        public CameraPointVo getMainCameraPointVo()
-        {
-            return this._mainCameraPointVo;
         }
 
         public void setClickedFloorAnimGo( GameObject clickedFloorAnimGo )

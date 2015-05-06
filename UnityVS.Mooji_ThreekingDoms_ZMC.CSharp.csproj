@@ -327,14 +327,16 @@
     <Compile Include="Assets\Scripts\MoojiLibs\BattleUnits\AI\MoveAndRotation\IAnimatorHashID.cs" />
     <Compile Include="Assets\Scripts\MoojiLibs\BattleUnits\AI\MoveAndRotation\SimpleAnimatorHashID.cs" />
     <Compile Include="Assets\Scripts\MoojiLibs\BattleUnits\Player\PlayerUnitManager.cs" />
-    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\CameraSwitchManager.cs" />
-    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\vos\CameraPointVo.cs" />
-    <Compile Include="Assets\Scripts\Test\CamRig.cs" />
-    <Compile Include="Assets\Scripts\Test\CameraRigByMixCamRigs.cs" />
-    <Compile Include="Assets\Scripts\Test\DebugInfluence.cs" />
-    <Compile Include="Assets\Scripts\Test\InfluenceBox.cs" />
-    <Compile Include="Assets\Scripts\Test\InfluenceSphere.cs" />
-    <Compile Include="Assets\Scripts\Test\InfluenceZone.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\CameraInFluenceController.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\CamInfluenceTriggerPoint.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\CamRig.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\Filters\CamFluencePointsFilter.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\Filters\ICamFluencePointsFilter.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\GhostCamDriver\GhostCamRigDriver.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\GhostCamDriver\IGhostCamRigDriver.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\DrawGizmosComponents\DrawGizmos.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\vos\CamFilterIntent.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\vos\CamFilterResultInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\--UnityPlugins--\BundleManager\BMConfiger.txt" />

@@ -28,12 +28,13 @@ namespace Mooji
             //  设置默认可以控制的 unit
             playerInfoBB.setCurrLeadGo( defaultSelectLeadUnit );
 
-            //  设置主摄像机 跟随的 unit
-            CameraPointVo mainCameraPointVo =  defaultMainCameraPoint.GetComponent<CameraPointVo>();
-            mainCameraPointVo.setFollowerTarget( defaultSelectLeadUnit );
-            mainCameraPointVo.initDefaultCameraPoint();
-            mainCameraPointVo.cameraFollowTarget();
-
+            ////  设置主摄像机 跟随的 unit
+            //CameraPointVo mainCameraPointVo =  defaultMainCameraPoint.GetComponent<CameraPointVo>();
+            //mainCameraPointVo.setFollowerTarget( defaultSelectLeadUnit );
+            //mainCameraPointVo.initDefaultCameraPoint();
+            //mainCameraPointVo.cameraFollowTarget();
+            ////  [保存]住摄像机 机位对象
+            //playerInfoBB.setMainCameraPointVo( mainCameraPointVo );
 
             //  [保存]点击地板后的特效
             GameObject clickedFloorAnimGo = BMC.getPrefabsBehaviour().instantiatePrefab( PrefbasAssets.PrefabAssetsConstant.CLICKED_GROUND_MASK , true );
@@ -43,8 +44,7 @@ namespace Mooji
             GameObject currSelectLeadAnimGo = BMC.getPrefabsBehaviour().instantiatePrefab( PrefbasAssets.PrefabAssetsConstant.CLICKED_GROUND_MASK , true );
             playerInfoBB.setCurrSelectLeadAnimGo( currSelectLeadAnimGo );
 
-            //  [保存]住摄像机 机位对象
-            playerInfoBB.setMainCameraPointVo( mainCameraPointVo  );
+           
 
         }
     }
