@@ -8,10 +8,9 @@ namespace Mooji
 {
     public interface IGhostCamRigDriver
     {
-
-        void init(Transform targetGhostPlayer , Transform targetGhostRig);
-
         void run( CamFilterResultInfo resultInfo );
+
+        void init( CamDriverIntent camDriverIntent);
 
     }
 }

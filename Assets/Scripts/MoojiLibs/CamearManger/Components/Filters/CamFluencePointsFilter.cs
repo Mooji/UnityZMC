@@ -9,18 +9,25 @@ namespace Mooji
     {
 
         [SerializeField]
-        private List<CamInfluenceTriggerPoint> debugTriggerPointLst;
-
-
+        private List<CamInfluenceTriggerPoint>  _debugTriggerPointLst;
         private CamFilterIntent                 _camFilterIntent;
         private CamFilterResultInfo             _resultInfo;
-        private float _currAllWeightSum         = 0f;
 
 
         void Awake()
         {
-
             _resultInfo = new CamFilterResultInfo();
+        }
+
+        public CamFilterIntent createFilterIntent()
+        {
+            CameraInFluenceController controller =  GetComponent<CameraInFluenceController>();
+            CamFilterIntent tempCamFilterIntent = new CamFilterIntent();
+            tempCamFilterIntent.followTargetGhost = controller.ghostTarget;
+            tempCamFilterIntent.layerMask = controller.layerMask;
+            tempCamFilterIntent.requireComponentArr = null;
+            tempCamFilterIntent.colliderRadius = 1f;
+            return tempCamFilterIntent;
         }
 
         public bool filter( CamFilterIntent camFilterIntent , out CamFilterResultInfo info )
@@ -32,8 +39,15 @@ namespace Mooji
             //  过滤碰撞的 collider 存放入 _camInfiuencePointLst 中
             bool hasHit = tempLst.Count > 0;
 
+
+            if ( tempLst.Count == 2 )
+            {
+                int a = 1;
+            }
+
             if ( hasHit )
             {
+
                 Vector3[] positions = tempLst.Select<CamInfluenceTriggerPoint , Vector3>( tp => tp.getCamRigPosition() ).ToArray();
                 Vector3[] facings   = tempLst.Select<CamInfluenceTriggerPoint , Vector3>( tp => tp.getCamRigfacing() ).ToArray();
                 Vector3[] ups       = tempLst.Select<CamInfluenceTriggerPoint , Vector3>( tp => tp.getCamRigUp() ).ToArray();
@@ -65,7 +79,7 @@ namespace Mooji
                 _resultInfo.resultMixedUp = mixedUpVec3 / qWeightSum;
                 _resultInfo.hitTriggerPointLst = tempLst;
 
-                debugTriggerPointLst = tempLst;
+                _debugTriggerPointLst = tempLst;
             }
 
             info = _resultInfo;

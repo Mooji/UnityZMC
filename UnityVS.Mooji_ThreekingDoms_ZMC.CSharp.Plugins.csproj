@@ -608,6 +608,7 @@
     <None Include="Assets\--UnityPlugins--\DOTween\readme.txt" />
     <None Include="Assets\--UnityPlugins--\MathLibraryForUnity\Doc\VersionLog.txt" />
     <None Include="Assets\--UnityPlugins--\MathLibraryForUnity\Lib\DestMath.XML" />
+    <None Include="Assets\--UnityPlugins--\UniRx\ReadMe.txt" />
     <None Include="Assets\Editor\Doc\Configs\ClientAndServerCommunicationProtocol.xml" />
     <None Include="Assets\Editor\Doc\Configs\GameConfig.xml" />
     <None Include="Assets\Editor\Doc\DataBase\allCSharpFilesComplete.txt" />

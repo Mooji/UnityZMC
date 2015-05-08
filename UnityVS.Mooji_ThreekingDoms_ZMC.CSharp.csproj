@@ -7,16 +7,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{51927473-F300-085F-B439-503CCFB94DD2}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.0.1f1</UnityVersion>
@@ -263,6 +261,122 @@
     <Compile Include="Assets\--UnityPlugins--\MathLibraryForUnity\Tests\Scripts\Query\2D\Test_Triangle2Sides.cs" />
     <Compile Include="Assets\--UnityPlugins--\MathLibraryForUnity\Tests\Scripts\Query\3D\Test_Plane3Sides.cs" />
     <Compile Include="Assets\--UnityPlugins--\MathLibraryForUnity\Tests\Scripts\Test_Base.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample01_ObservableWWW.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample02_ObservableTriggers.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample03_GameObjectAsObservable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample04_ConvertFromUnityCallback.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample05_ConvertFromCoroutine.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample06_ConvertToCoroutine.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample07_OrchestratIEnumerator.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample08_DetectDoubleClick.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample09_EventHandling.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample10_MainThreadDispatcher.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample11_Logger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample12_ReactiveProperty.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Sample13_ToDoApp.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Asynchronous\WebRequestExtensions.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Disposables\BooleanDisposable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Disposables\CompositeDisposable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Disposables\Disposable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Disposables\DisposableExtensions.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Disposables\ICancelable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Disposables\MultipleAssignmentDisposable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Disposables\RefCountDisposable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Disposables\ScheduledDisposable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Disposables\SerialDisposable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Disposables\SingleAssignmentDisposable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\EventPattern.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\InternalUtil\ImmutableList.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\InternalUtil\ListObserver.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\InternalUtil\PriorityQueue.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\InternalUtil\ReflectionAccessor.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\InternalUtil\ScheduledItem.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\InternalUtil\ThreadSafeQueueWorker.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Notification.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Notifiers\BooleanNotifier.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Notifiers\CountNotifier.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Notifiers\ScheduledNotifier.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.Aggregate.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.Binding.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.Blocking.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.Concatenate.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.Concurrency.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.Conversions.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.Creation.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.ErrorHandling.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.Events.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.FromAsync.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.Joins.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.Paging.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.Time.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Observer.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Schedulers\CurrentThreadScheduler.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Schedulers\ImmediateScheduler.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Schedulers\Scheduler.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Schedulers\ThreadPoolScheduler.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Subjects\AsyncSubject.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Subjects\BehaviorSubject.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Subjects\ConnectableObservable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Subjects\ISubject.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Subjects\ReplaySubject.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Subjects\Subject.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\System\IObservable.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\System\IObserver.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\System\IProgress.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\System\Tuple.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\System\Unit.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\TimeInterval.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\Timestamped.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\AotSafeExtensions.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\AsyncOperationExtensions.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\CancellationToken.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Diagnostics\LogEntry.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Diagnostics\LogEntryExtensions.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Diagnostics\Logger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Diagnostics\ObservableLogger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Diagnostics\UnityDebugSink.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\InspectableReactiveProperty.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\InspectorDisplayDrawer.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\LazyTask.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\LifetimeDisposableExtensions.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\MainThreadDispatcher.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\MainThreadScheduler.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Observable.Unity.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\ObservableMonoBehaviour.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\ObservableWWW.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\ObserveExtensions.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\ReactiveCollection.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\ReactiveDictionary.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\ReactiveProperty.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\ScenePlaybackDetector.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableAnimatorTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableCanvasGroupChangedTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableCollision2DTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableCollisionTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableDestroyTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableEnableTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableEventTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableFixedUpdateTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableLateUpdateTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableMouseTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableRectTransformTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableStateMachineTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableTransformChangedTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableTrigger2DTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableTriggerBase.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableTriggerExtensions.Component.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableTriggerExtensions.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableTriggerTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableUpdateTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\Triggers\ObservableVisibleTrigger.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\TypedMonoBehaviour.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\UnityEventExtensions.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\UnityGraphicExtensions.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityEngineBridge\UnityUIComponentExtensions.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityWinRTBridge\Thread.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Scripts\UnityWinRTBridge\ThreadPoolScheduler_UnityWinRT.cs" />
+    <Compile Include="Assets\--UnityPlugins--\UniRx\Examples\Test.cs" />
     <Compile Include="Assets\Scripts\Autogeneration\DataSets\Configs\GameConfigVo.cs" />
     <Compile Include="Assets\Scripts\Autogeneration\DataSets\Configs\GameConfigsTemplete.cs" />
     <Compile Include="Assets\Scripts\Demo\PanelManager.cs" />
@@ -330,13 +444,15 @@
     <Compile Include="Assets\Scripts\MoojiLibs\BattleUnits\AI\MoveAndRotation\SimpleAnimatorHashID.cs" />
     <Compile Include="Assets\Scripts\MoojiLibs\BattleUnits\Player\PlayerUnitManager.cs" />
     <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\CameraInFluenceController.cs" />
-    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\CamInfluenceTriggerPoint.cs" />
-    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\CamRig.cs" />
     <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\Filters\CamFluencePointsFilter.cs" />
     <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\Filters\ICamFluencePointsFilter.cs" />
     <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\GhostCamDriver\GhostCamRigDriver.cs" />
     <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\GhostCamDriver\IGhostCamRigDriver.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\TriggerPoints\CamInfluenceTriggerPoint.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\TriggerPoints\CamRig.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Components\TriggerPoints\DefaultTriggerPoint.cs" />
     <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\DrawGizmosComponents\DrawGizmos.cs" />
+    <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Intent\CamDriverIntent.cs" />
     <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Intent\CamFilterIntent.cs" />
     <Compile Include="Assets\Scripts\MoojiLibs\CamearManger\Intent\CamFilterResultInfo.cs" />
   </ItemGroup>
@@ -356,6 +472,7 @@
     <None Include="Assets\--UnityPlugins--\DOTween\readme.txt" />
     <None Include="Assets\--UnityPlugins--\MathLibraryForUnity\Doc\VersionLog.txt" />
     <None Include="Assets\--UnityPlugins--\MathLibraryForUnity\Lib\DestMath.XML" />
+    <None Include="Assets\--UnityPlugins--\UniRx\ReadMe.txt" />
     <None Include="Assets\Editor\Doc\Configs\ClientAndServerCommunicationProtocol.xml" />
     <None Include="Assets\Editor\Doc\Configs\GameConfig.xml" />
     <None Include="Assets\Editor\Doc\DataBase\allCSharpFilesComplete.txt" />

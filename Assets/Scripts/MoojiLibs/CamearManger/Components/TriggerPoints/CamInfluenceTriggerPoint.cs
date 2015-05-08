@@ -18,15 +18,6 @@ namespace Mooji
         /// 旋转权重
         /// </summary>
         public float quaternionWeight = 5f;
-        /// <summary>
-        /// 
-        /// </summary>
-        public float moveSpeed = 1f;
-        /// <summary>
-        /// 
-        /// </summary>
-        public float rotationSpeed = 1f;
-
         //  ============================ Private ============================
         /// <summary>
         /// 数据读取器 自己 或 孩子必须包含这个组件
@@ -46,10 +37,6 @@ namespace Mooji
                 throw new Exception( "自己 或 子物体必须包含一个 CamRig 组件, @see CamRig" );
         }
 
-        void Start()
-        {
-
-        }
 
         virtual public float[] getPositionAndQuaternionInfluenceWeight( Transform target )
         {
@@ -64,7 +51,7 @@ namespace Mooji
             {
                 SphereCollider col = _collider as SphereCollider;
                 tempPosW = positionWeight;
-                //return ( col.radius > 0 ) && ( ( pos - transform.position ).sqrMagnitude < ( col.radius * col.radius ) ) ? weight : 0f;
+                tempPosW = ( col.radius > 0 ) && ( ( target.position - transform.position ).sqrMagnitude < ( col.radius * col.radius ) ) ? tempPosW : 0f;
             }
             else if ( _collider is BoxCollider )
             {
