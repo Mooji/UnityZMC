@@ -22,10 +22,6 @@ namespace Mooji
         /// </summary>
         public Transform ghostTarget;
         /// <summary>
-        /// 一个摄像机位置的影子
-        /// </summary>
-        public Transform ghostRig;
-        /// <summary>
         /// 是否自动跟着ghostRig移动 
         /// </summary>
         public bool ghostAttachMainCamera;
@@ -60,11 +56,11 @@ namespace Mooji
             if ( _fluencePointFilter.filter( _defCamFilterIntent , out camFilterResultInfo ) )
             {
 
-                List<CamInfluenceTriggerPoint> hitTriggerPointLst = camFilterResultInfo.hitTriggerPointLst;
+                List<ICamFluenceTriggerPoint> hitTriggerPointLst = camFilterResultInfo.hitTriggerPointLst;
 
                 for ( int i = 0 ; i < hitTriggerPointLst.Count ; i++ )
                 {
-                    IGhostCamRigDriver rigDriver = hitTriggerPointLst[i].GetComponent<IGhostCamRigDriver>();
+                    IGhostCamRigDriver rigDriver = ( hitTriggerPointLst[i] as Component ).GetComponent<IGhostCamRigDriver>();
 
                     if ( rigDriver != null )
                     {
@@ -82,11 +78,11 @@ namespace Mooji
 
 
             //  主摄像机跟着Ghost CamRig 移动 和旋转
-            if ( ghostAttachMainCamera && mainCamera != null )
-            {
-                mainCamera.position = ghostRig.position;
-                mainCamera.rotation = ghostRig.rotation;
-            }
+            //if ( ghostAttachMainCamera && mainCamera != null )
+            //{
+            //    mainCamera.position = ghostRig.position;
+            //    mainCamera.rotation = ghostRig.rotation;
+            //}
 
         }
 

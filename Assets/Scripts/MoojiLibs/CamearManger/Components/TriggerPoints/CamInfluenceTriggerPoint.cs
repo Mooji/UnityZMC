@@ -6,7 +6,7 @@ namespace Mooji
     /// <summary>
     /// 影响主摄像机的移动的触发点
     /// </summary>
-    public class CamInfluenceTriggerPoint : MonoBehaviour
+    public class CamInfluenceTriggerPoint : MonoBehaviour , ICamFluenceTriggerPoint
     {
 
         //  ============================ SerializeField ============================
@@ -37,8 +37,8 @@ namespace Mooji
                 throw new Exception( "自己 或 子物体必须包含一个 CamRig 组件, @see CamRig" );
         }
 
-
-        virtual public float[] getPositionAndQuaternionInfluenceWeight( Transform target )
+        //  =============================== impl ICamFluenceTriggerPoint ==================================================
+        public float[] getPositionAndQuaternionInfluenceWeight( Transform target )
         {
 
             float tempPosW = 0f;
@@ -68,7 +68,10 @@ namespace Mooji
         {
             return _cRig.transform.position;
         }
-
+        virtual public Quaternion getCamRigRotation()
+        {
+            return _cRig.transform.rotation;
+        }
         virtual public Vector3 getCamRigfacing()
         {
             //return _cRig.position+ _cRig.transform.forward;
@@ -81,7 +84,18 @@ namespace Mooji
             return _cRig.transform.up;
         }
 
+        virtual public CamRig getCamRig()
+        {
+            return _cRig;
+        }
+        virtual public void setCamRigPosition( Vector3 pos )
+        {
+            _cRig.transform.position = pos;
+        }
 
-
+        virtual public void setCamRigRotation( Quaternion q )
+        {
+            _cRig.transform.rotation = q;
+        }
     }
 }

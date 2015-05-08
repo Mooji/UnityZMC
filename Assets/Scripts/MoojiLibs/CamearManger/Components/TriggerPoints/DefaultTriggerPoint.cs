@@ -1,7 +1,14 @@
-﻿namespace Mooji
+﻿using UnityEngine;
+
+namespace Mooji
 {
     public class DefaultTriggerPoint : CamInfluenceTriggerPoint
     {
+
+        private CameraInFluenceController _camInfulenceController;
+
+        private Vector3 _offsetVec;
+
         void Start()
         {
 
@@ -10,18 +17,26 @@
             if ( null != driver )
             {
 
-                CameraInFluenceController camInfulenceController = GetComponentInParent<CameraInFluenceController>();
+                _camInfulenceController = GetComponentInParent<CameraInFluenceController>();
 
-                if ( null != camInfulenceController )
+                if ( null != _camInfulenceController )
                 {
-                    CamDriverIntent intent = new CamDriverIntent();
-                    intent.ghostTarget = camInfulenceController.ghostTarget;
-                    intent.ghostCamRig = camInfulenceController.ghostRig;
-                    driver.init( intent );
+                    _offsetVec = getCamRig().transform.position - _camInfulenceController.ghostTarget.position;
                 }
 
             }
         }
+
+
+        override public Vector3 getCamRigPosition()
+        {
+            if ( _camInfulenceController == null )
+                return Vector3.zero;
+
+            return _camInfulenceController.ghostTarget.position + _offsetVec;
+        }
+
+
 
     }
 }

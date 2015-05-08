@@ -9,7 +9,7 @@ namespace Mooji
     {
 
         [SerializeField]
-        private List<CamInfluenceTriggerPoint>  _debugTriggerPointLst;
+        private List<ICamFluenceTriggerPoint>  _debugTriggerPointLst;
         private CamFilterIntent                 _camFilterIntent;
         private CamFilterResultInfo             _resultInfo;
 
@@ -34,7 +34,7 @@ namespace Mooji
         {
             this._camFilterIntent = camFilterIntent;
 
-            List<CamInfluenceTriggerPoint>  tempLst = createInfluenceQuery();
+            List<ICamFluenceTriggerPoint>  tempLst = createInfluenceQuery();
 
             //  过滤碰撞的 collider 存放入 _camInfiuencePointLst 中
             bool hasHit = tempLst.Count > 0;
@@ -48,10 +48,10 @@ namespace Mooji
             if ( hasHit )
             {
 
-                Vector3[] positions = tempLst.Select<CamInfluenceTriggerPoint , Vector3>( tp => tp.getCamRigPosition() ).ToArray();
-                Vector3[] facings   = tempLst.Select<CamInfluenceTriggerPoint , Vector3>( tp => tp.getCamRigfacing() ).ToArray();
-                Vector3[] ups       = tempLst.Select<CamInfluenceTriggerPoint , Vector3>( tp => tp.getCamRigUp() ).ToArray();
-                float[][] weights   = tempLst.Select<CamInfluenceTriggerPoint , float[]>( tp => tp.getPositionAndQuaternionInfluenceWeight( camFilterIntent.followTargetGhost ) ).ToArray();
+                Vector3[] positions = tempLst.Select<ICamFluenceTriggerPoint , Vector3>( tp => tp.getCamRigPosition() ).ToArray();
+                Vector3[] facings   = tempLst.Select<ICamFluenceTriggerPoint , Vector3>( tp => tp.getCamRigfacing() ).ToArray();
+                Vector3[] ups       = tempLst.Select<ICamFluenceTriggerPoint , Vector3>( tp => tp.getCamRigUp() ).ToArray();
+                float[][] weights   = tempLst.Select<ICamFluenceTriggerPoint , float[]>( tp => tp.getPositionAndQuaternionInfluenceWeight( camFilterIntent.followTargetGhost ) ).ToArray();
 
 
                 Vector3 mixedPositionVec3   = Vector3.zero;
@@ -89,14 +89,14 @@ namespace Mooji
 
 
 
-        private List<CamInfluenceTriggerPoint> createInfluenceQuery()
+        private List<ICamFluenceTriggerPoint> createInfluenceQuery()
         {
             //  在碰撞范围内所有的碰撞体
             Collider[] hitColliderArr = Physics.OverlapSphere( _camFilterIntent.followTargetGhost.position , _camFilterIntent.colliderRadius , _camFilterIntent.layerMask );
 
 
             // 不要使用实例变量，没有 onColliderExit 。。。
-            List<CamInfluenceTriggerPoint> tempLst = new List<CamInfluenceTriggerPoint>();
+            List<ICamFluenceTriggerPoint> tempLst = new List<ICamFluenceTriggerPoint>();
 
 
             for ( int i = 0 ; i < hitColliderArr.Length ; i++ )
@@ -107,7 +107,7 @@ namespace Mooji
 
                 if ( continueFlag )
                 {
-                    CamInfluenceTriggerPoint tempCamFluenceTriggerPoint = tempCollider.GetComponent<CamInfluenceTriggerPoint>();
+                    ICamFluenceTriggerPoint tempCamFluenceTriggerPoint = tempCollider.GetComponent<ICamFluenceTriggerPoint>();
 
                     if ( !tempLst.Contains( tempCamFluenceTriggerPoint ) )
                     {

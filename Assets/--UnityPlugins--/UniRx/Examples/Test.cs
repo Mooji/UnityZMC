@@ -17,6 +17,12 @@ namespace UniRx.Examples
             IObservable<long> stream =   Observable.EveryUpdate().Where( ob => this.isClick() );
 
             stream.Subscribe( ob => Debug.Log( "clicked !" ) );
+
+
+
+
+
+
         }
 
 
